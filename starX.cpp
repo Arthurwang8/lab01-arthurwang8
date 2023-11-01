@@ -13,7 +13,7 @@ string starX(int width)
 {
   string result = "";
   // check if parameters are valid
-  if (width < 3){
+  if (width < 3 || width%2 != 1){
     return result; // return without printing anything
     }
   // add the first height-1 rows that are a single star
@@ -33,7 +33,7 @@ string starX(int width)
     }
     result += "\n";
   }
-  if(width%2 == 1){
+  
     for (int b1 = 0; b1 < width/2; b1++){
     result += " ";
     }
@@ -42,18 +42,18 @@ string starX(int width)
     result += " ";
     }
     result += "\n";
-  }
-  for (int co = width/2; co < width; co++)
+  
+  for (int co = width/2+2; co < width; co++)
   {
     for (int b1 = 0; b1 < width - co; b1++){
     result += " ";
     }
   result += "*";
-    for (int b2 = width -co +1 ; b2 < co - 1; b2++){
+    for (int b2 = width -co +1 ; b2 < co ; b2++){
     result += " ";
     }
     result += "*";
-    for (int b3 = co ; b3 < width; b3++){
+    for (int b3 = co +1 ; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
