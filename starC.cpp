@@ -102,17 +102,22 @@ void assertEquals(string expected, string actual, string message = "")
 int main(int argc, char *argv[])
 {
 
-  // TODO: Add check for parameters
-  // and code to print usage message
+  if (argc != 3)
+  {
+    cerr << "Usage: " << argv[0] << " width height" << endl;
+    exit(1);
+  }
 
-  // TODO: Add code to get width and height from cmd line args
-  // code that checks if they are both -1; if so, call runTests()
-  // then exit.
+  int width = stoi(argv[1]);
+  int height = stoi(argv[2]);
+  // If the program is executed with parameters -1 -1 unit test
+  // the starL() function using our automated test framework
+  if (width == -1 && height == -1)
+  {
+    runTests();
+    exit(0);
+  }
 
-  runTests();
-
-  // TODO: Add code that calls the starC function and prints
-  // the result on cout (without an extra newline)
-
+  cout << starC(width, height);
   return 0;
 }
