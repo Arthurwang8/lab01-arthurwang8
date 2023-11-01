@@ -33,6 +33,9 @@ string starC(int width, int height)
   {
     
     result += "*";
+   for (int co = 1; co < width; co++){
+   result += " ";
+   }
     result += "\n";
   }
   for (int co = 0; co < width; co++)
