@@ -36,6 +36,11 @@ string starT(int width, int height)
     
   }
     result += "*";
+    for (int co = (width/2 + 1); co < width; co++)
+  {
+  result += " ";
+    
+  }
     result += "\n";
   }
   
