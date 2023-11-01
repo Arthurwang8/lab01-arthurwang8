@@ -34,11 +34,11 @@ string starX(int width)
     result += "\n";
   }
   if(width%2 == 1){
-    for (int b1 = 0; b1 < co; b1++){
+    for (int b1 = 0; b1 < width/2; b1++){
     result += " ";
     }
   result += "*";
-    for (int b3 = (width - co ) ; b3 < width; b3++){
+    for (int b3 = width/2 ; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
