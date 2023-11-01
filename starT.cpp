@@ -30,7 +30,7 @@ string starT(int width, int height)
   // add the final row of width stars
   for (int row = 1; row < height; row++)
   {
-    for (int co = 1; co < width/2; co++)
+    for (int co = 0; co < width/2; co++)
   {
   result += " ";
     
