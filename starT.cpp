@@ -15,7 +15,7 @@ string starT(int width, int height)
 {
   string result = "";
   // check if parameters are valid
-  if (height <= 1||width%2 == 0){
+  if (height == 1|| width < 2 || width%2 ==0 ){
     return result; // return without printing anything
     }
   // add the first height-1 rows that are a single star
@@ -82,6 +82,7 @@ void runTests(void)
   assertEquals("", starT(4, 2), "starT(4,2)");
   assertEquals("", starT(6, 2), "starT(6,2)");
 }
+
 
 // Test harness
 
