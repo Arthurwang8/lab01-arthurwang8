@@ -11,7 +11,30 @@ void runTests(void);
 
 string starX(int width)
 {
-  return "stub";
+  string result = "";
+  // check if parameters are valid
+  if (width < 3){
+    return result; // return without printing anything
+    }
+  // add the first height-1 rows that are a single star
+  // followed by width-1 spaces, then a \n
+  for (int co = 0; co < width; co++)
+  {
+    for (int b1 = 0; b1 <= co; b1++){
+    result += " ";
+    }
+  result += "*";
+    for (int b2 = co +1 ; b2 <= (width - co -1); b2++){
+    result += " ";
+    }
+    result += "*";
+    for (int b2 = (width - co ) ; b2 < width; b2++){
+    result += " ";
+    }
+    result += "\n";
+  }
+  
+  return result;
 }
 
 // Test-Driven Development;
