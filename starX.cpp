@@ -43,7 +43,7 @@ string starX(int width)
     }
     result += "\n";
   
-  for (int co = width/2+2; co < width; co++)
+  for (int co = width/2+1; co < width; co++)
   {
     for (int b1 = 0; b1 < width - co; b1++){
     result += " ";
