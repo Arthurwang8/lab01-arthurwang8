@@ -18,7 +18,7 @@ string starX(int width)
     }
   // add the first height-1 rows that are a single star
   // followed by width-1 spaces, then a \n
-  for (int co = 0; co < width; co++)
+  for (int co = 0; co < width/2; co++)
   {
     for (int b1 = 0; b1 < co; b1++){
     result += " ";
@@ -29,6 +29,31 @@ string starX(int width)
     }
     result += "*";
     for (int b3 = (width - co ) ; b3 < width; b3++){
+    result += " ";
+    }
+    result += "\n";
+  }
+  if(width%2 == 1){
+    for (int b1 = 0; b1 < co; b1++){
+    result += " ";
+    }
+  result += "*";
+    for (int b3 = (width - co ) ; b3 < width; b3++){
+    result += " ";
+    }
+    result += "\n";
+  }
+  for (int co = width/2; co < width; co++)
+  {
+    for (int b1 = 0; b1 < width - co; b1++){
+    result += " ";
+    }
+  result += "*";
+    for (int b2 = width -co ; b2 < co - 1; b2++){
+    result += " ";
+    }
+    result += "*";
+    for (int b3 = co-1 ; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
