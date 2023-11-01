@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
     exit(0);
   }
 
-  cout << starX(width, height);
+  cout << starX(width);
   return 0;
 }
 
