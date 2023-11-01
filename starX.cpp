@@ -20,15 +20,15 @@ string starX(int width)
   // followed by width-1 spaces, then a \n
   for (int co = 0; co < width; co++)
   {
-    for (int b1 = 0; b1 <= co; b1++){
+    for (int b1 = 0; b1 < co; b1++){
     result += " ";
     }
   result += "*";
-    for (int b2 = co +1 ; b2 <= (width - co -1); b2++){
+    for (int b2 = co +1 ; b2 < (width - co-1); b2++){
     result += " ";
     }
     result += "*";
-    for (int b2 = (width - co ) ; b2 < width; b2++){
+    for (int b3 = (width - co ) ; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
