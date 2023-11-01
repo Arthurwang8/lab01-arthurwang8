@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
   if (width == -1 && height == -1)
   {
     runTests();
-    exit(1);
+    exit(0);
   }
 
   cout << starT(width, height);
