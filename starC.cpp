@@ -14,8 +14,33 @@ void runTests(void);
 
 string starC(int width, int height)
 {
-  string result = "";
-  result = "stub"; // TODO: remove this line, replace with correct code
+   string result = "";
+  // check if parameters are valid
+  if (height 《=2 || width <= 2 ){
+    return result; // return without printing anything
+    }
+  // add the first height-1 rows that are a single star
+  // followed by width-1 spaces, then a \n
+  for (int co = 0; co < width; co++)
+  {
+  result += "*";
+    
+  }
+  result += "\n";
+
+  // add the final row of width stars
+  for (int row = 1; row < height-1; row++)
+  {
+    
+    result += "*";
+    result += "\n";
+  }
+  for (int co = 0; co < width; co++)
+  {
+  result += "*";
+    
+  }
+  result += "\n";
   return result;
 }
 
