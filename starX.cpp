@@ -38,7 +38,7 @@ string starX(int width)
     result += " ";
     }
   result += "*";
-    for (int b3 = width/2 ; b3 < width; b3++){
+    for (int b3 = width/2 + 1; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
@@ -49,11 +49,11 @@ string starX(int width)
     result += " ";
     }
   result += "*";
-    for (int b2 = width -co ; b2 < co - 1; b2++){
+    for (int b2 = width -co +1 ; b2 < co - 1; b2++){
     result += " ";
     }
     result += "*";
-    for (int b3 = co-1 ; b3 < width; b3++){
+    for (int b3 = co ; b3 < width; b3++){
     result += " ";
     }
     result += "\n";
