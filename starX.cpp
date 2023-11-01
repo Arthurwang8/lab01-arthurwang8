@@ -45,11 +45,11 @@ string starX(int width)
   
   for (int co = width/2+1; co < width; co++)
   {
-    for (int b1 = 0; b1 < width - co; b1++){
+    for (int b1 = 0; b1 < width - co -1; b1++){
     result += " ";
     }
   result += "*";
-    for (int b2 = width -co +1 ; b2 < co ; b2++){
+    for (int b2 = width -co ; b2 < co ; b2++){
     result += " ";
     }
     result += "*";
