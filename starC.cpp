@@ -16,7 +16,7 @@ string starC(int width, int height)
 {
    string result = "";
   // check if parameters are valid
-  if (height 《=2 || width <= 2 ){
+  if (height <=2 || width <= 2 ){
     return result; // return without printing anything
     }
   // add the first height-1 rows that are a single star
